@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-sm-12 col-md-6">
+    <div class="well-sm">
+      <h3>Introduction</h3>
+      <p>이 페이지는 <a href="https://norman3.github.io/prml">norman3님의 PRML 정리 문서</a>를 바탕으로 재구성한 <b>subinium<b>의 강의자료 문서입니다.</p>
+      
+    </div>
+    
+    <div class="well-sm">
+      <h3>New Posts</h3>
+      <ul class="post-list">
+	      {% for post in site.posts limit:3 %}
+	      <li>
+	        <h4>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	        </h4>
+	        <p><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></p>
+	        {{ post.excerpt }}
+          <hr/>          
+	      </li>
+	      {% endfor %}
+      </ul>
+    </div>
+  </div>
+  
+  <div class="col-sm-12 col-md-6">
+    <div class="well-sm">
+      <h3>Chapter 1. Introduction</h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/docs/chapter01/0">0. 알고리즘이란?</a></li>
+      </ul>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+

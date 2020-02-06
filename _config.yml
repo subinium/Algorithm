@@ -1,0 +1,20 @@
+# Site settings
+title: AlgoGuide
+
+email: "subinium@gmail.com"
+url: "http://subinium.github.io"
+github_url: "http://github.com/subinium/Algorithm"
+github_profile: "http://github.com/subinium"
+baseurl: "/Algorithm"
+disqus_shortname: www-subinium-github-io
+
+exclude:
+  - README.md
+  - _site
+  
+highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

@@ -2,15 +2,27 @@ topnav:
   - title: Chapter
     items:
       - title: 1. Introduction
+        group: Chapter. 0
+        url: /docs/chapter00/0 
+      - title: 2. Basic
         group: Chapter. 1
         url: /docs/chapter01/0
-      - title: 2. Data Structure
+      - title: 3. Data Structure
         group: Chapter. 2
         url: /docs/chapter02/0
+      - title: 4. Algorithm
+        group: Chapter. 3
+        url: /docs/chapter03/0
+  - title: 0
+    group: "Chapter. 0"
+    url: /docs/chapter00/0 
   - title: 1
     group: "Chapter. 1"
     url: /docs/chapter01/0
   - title: 2
     group: "Chapter. 2"
     url: /docs/chapter02/0
+  - title: 3
+    group: "Chapter. 3"
+    url: /docs/chapter03/0
   

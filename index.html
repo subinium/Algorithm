@@ -1,75 +1,109 @@
 ---
 layout: default
 ---
+
 <div class="row">
   <div class="col-sm-12 col-md-6">
     <div class="well-sm">
       <h3>Introduction</h3>
-      <p>이 페이지는 <a href="https://norman3.github.io/prml">norman3님의 PRML 정리 문서</a>를 바탕으로 재구성한 <b>subinium<b>의 강의자료 문서입니다.</p>
-      
+      <p>
+        이 페이지는
+        <a href="https://norman3.github.io/prml">norman3님의 PRML 정리 문서</a
+        >를 바탕으로 재구성한 <b>subinium</b>의 강의자료 문서입니다.
+      </p>
+      <p>
+        기본적인 자료구조와 알고리즘을 <b>문제해결</b>를 바탕으로 공부하며
+        코딩테스트와 면접 모두 통과할 수 있게 돕겠습니다.
+      </p>
     </div>
-    
+
     <div class="well-sm">
       <h3>New Posts</h3>
       <ul class="post-list">
-	      {% for post in site.posts limit:3 %}
-	      <li>
-	        <h4>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	        </h4>
-	        <p><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></p>
-	        {{ post.excerpt }}
-          <hr/>          
-	      </li>
-	      {% endfor %}
+        {% for post in site.posts limit:3 %}
+        <li>
+          <h4>
+            <a href="{{ post.url | prepend: site.baseurl }}"
+              >{{ post.title }}</a
+            >
+          </h4>
+          <p>
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </p>
+          {{ post.excerpt }}
+          <hr />
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
-  
+
   <div class="col-sm-12 col-md-6">
     <div class="well-sm">
-      <h3><a href="{{ site.baseurl }}/docs/chapter00/0">Chapter 0. Introduction</a></h3>
+      <h3>
+        <a href="{{ site.baseurl }}/docs/chapter00/0"
+          >Chapter 0. Introduction</a
+        >
+      </h3>
       <ul>
         <li>1. 알고리즘이란?</li>
         <li>2. 코딩테스트와 기술면접</li>
       </ul>
     </div>
-    
+
     <div class="well-sm">
-      <h3><a href="{{ site.baseurl }}/docs/chapter01/0">Chapter 1. Basic</a></h3>
+      <h3>
+        <a href="{{ site.baseurl }}/docs/chapter01/0">Chapter 1. Basic</a>
+      </h3>
       <ul>
-        <li>1. 입력과 초기화</li>
-        <li>2. 조건문과 반복문</li>
-        <li>3. 함수의 설계</li>
-        <li>4. 파이썬 라이브러리 활용</li>
-        <li>5. 기초 수학</li>
+        <li>
+          <a href="{{ site.baseurl }}/docs/chapter01/1">1. 입력과 초기화</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/docs/chapter01/2">2. 조건문과 반복문</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/docs/chapter01/3"
+            >3. 시간복잡도와 공간복잡도</a
+          >
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}/docs/chapter01/4"
+            >4. 파이썬 라이브러리 활용</a
+          >
+        </li>
+        <li><a href="{{ site.baseurl }}/docs/chapter01/5">5. 기초 수학</a></li>
       </ul>
     </div>
     <div class="well-sm">
-      <h3><a href="{{ site.baseurl }}/docs/chapter02/0">Chapter 2. Data Structure</a></h3>
+      <h3>
+        <a href="{{ site.baseurl }}/docs/chapter02/0"
+          >Chapter 2. Data Structure</a
+        >
+      </h3>
       <ul>
         <li><a href="{{ site.baseurl }}/docs/chapter02/1">1. Stack</a></li>
         <li><a href="{{ site.baseurl }}/docs/chapter02/2">2. Queue</a></li>
-        <li><a href="{{ site.baseurl }}/docs/chapter02/3">3. Tree & Graph</a></li>
-        <li><a href="{{ site.baseurl }}/docs/chapter02/4">4. Heap</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter02/3">3. Graph</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter02/4">4. Tree</a></li>
       </ul>
     </div>
     <div class="well-sm">
-      <h3><a href="{{ site.baseurl }}/docs/chapter03/0">Chapter 3. Algorithm</a></h3>
+      <h3>
+        <a href="{{ site.baseurl }}/docs/chapter03/0">Chapter 3. Algorithm</a>
+      </h3>
       <ul>
         <li>1. 전수조사</li>
-        <li>2. 정렬 알고리즘과 이분탐색</li>
+        <li>2. 정렬 알고리즘</li>
         <li>3. 분할정복</li>
-        <li>4. 투포인터와 슬라이딩 윈도우</li>
-        <li>5. 메모이제이션과 동적계획법</li>
-        <li>6. 비트마스크와 고급 탐색</li>
-        <li>7. 최단거리 알고리즘</li>
-        <li>8. 최소신장트리</li>
-        <li>9. 문자열 알고리즘</li>
+        <li>4. 이분탐색과 파라매트릭 서치</li>
+        <li>5. 투포인터와 슬라이딩 윈도우</li>
+        <li>6. 메모이제이션과 동적계획법</li>
+        <li>7. 비트마스크와 고급 탐색</li>
+        <li>8. 최단거리 알고리즘</li>
+        <li>9. 최소신장트리</li>
+        <li>10. 문자열 알고리즘</li>
       </ul>
     </div>
   </div>
 </div>
-
-
-

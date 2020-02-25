@@ -13,12 +13,7 @@ $blockquote-font-size: $font-size-base;
 @import "bootstrap";
 
 body {
-  background-color: #333333;
   font-size: 15px;
-}
-
-* {
-  color: #dddddd;
 }
 
 footer {
@@ -162,7 +157,7 @@ article li,
 }
 
 .nav-pills > li > a {
-  color: whitesmoke;
+  color: #333333;
 }
 
 .nav-pills > li.sub {
